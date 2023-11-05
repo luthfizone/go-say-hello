@@ -3,5 +3,7 @@ package gosayhello
 import "strconv"
 
 func Hello(name string, age int) string {
-	return "Halo" + " " + name + " " + "your age" + " " + strconv.Itoa(age) + " years old"
+	nameStr := name
+	ageStr := strconv.Itoa(age)
+	return "Halo" + " " + nameStr + ", your age is " + ageStr + " years old"
 }
